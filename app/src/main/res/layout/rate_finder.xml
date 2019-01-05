@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/toolbar_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_blue_backicon" />
+
+        <ImageView
+            android:id="@+id/back_arrowresult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_blue_backicon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ratefindertitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Rate Finder"
+            android:textColor="@color/Darkblueone"
+            android:textSize="@dimen/size_18"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/view"></View>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/appbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/selectfield_lineralayout"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/countryselect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margintop"
+                    android:background="@drawable/password_view_style"
+                    android:elevation="1dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/star_icon"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/common_paddingtxt"
+                        android:text="Country"
+                        android:textColor="@color/block"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:id="@+id/countyname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="right"
+                        android:hint="Select"
+                        android:maxLines="1"
+                        android:padding="@dimen/common_paddingtxt"
+                        android:textColor="@color/leuf_blue"
+                        android:textSize="@dimen/loginr_text_size" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+
+                    android:id="@+id/pollayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margintop"
+                    android:background="@drawable/password_view_style"
+                    android:clickable="true"
+                    android:elevation="@dimen/new_elivation"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:drawableRight="@drawable/star_icon"
+                        android:fontFamily="sans-serif-light"
+
+                        android:padding="@dimen/common_paddingtxt"
+                        android:text="POL"
+                        android:textColor="@color/block"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:id="@+id/pol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="right"
+                        android:hint="Select"
+                        android:maxLines="1"
+                        android:padding="@dimen/common_paddingtxt"
+                        android:textColor="@color/leuf_blue"
+                        android:textSize="@dimen/loginr_text_size" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/picker_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+
+                    <NumberPicker
+                        android:id="@+id/numberPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:descendantFocusability="blocksDescendants"
+
+                        />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/podlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margintop"
+                    android:background="@drawable/password_view_style"
+                    android:clickable="true"
+                    android:elevation="@dimen/new_elivation"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/common_paddingtxt"
+                        android:text="POD"
+                        android:textColor="@color/block"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:id="@+id/pod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="right"
+                        android:hint="Select"
+                        android:maxLines="1"
+
+                        android:padding="@dimen/common_paddingtxt"
+                        android:textColor="@color/leuf_blue"
+                        android:textSize="@dimen/loginr_text_size" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="false"
+                    android:progressDrawable="@drawable/circle_progress_bar"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+
+                    android:id="@+id/departurelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margintop"
+                    android:background="@drawable/password_view_style"
+                    android:clickable="true"
+                    android:elevation="@dimen/new_elivation">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/common_paddingtxt"
+                        android:text="Departure"
+                        android:textColor="@color/block"
+                        android:textSize="@dimen/loginr_text_size" />
+
+
+                    <TextView
+                        android:id="@+id/departure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="right"
+                        android:hint="Select"
+                        android:maxLines="1"
+                        android:padding="@dimen/common_paddingtxt"
+                        android:textColor="@color/leuf_blue"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/shippinglayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margintop"
+                    android:background="@drawable/password_view_style"
+                    android:clickable="true"
+                    android:elevation="@dimen/new_elivation"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="10dp"
+                        android:text="Shipingline"
+                        android:textColor="@color/block"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:id="@+id/shiplingline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="right"
+                        android:hint="Select"
+                        android:maxLines="1"
+                        android:padding="@dimen/common_paddingtxt"
+                        android:textColor="@color/leuf_blue"
+                        android:textSize="@dimen/loginr_text_size" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Raterecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@+id/footer"
+        android:background="@color/view" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:gravity="bottom"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/cancelbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/cancelbuttonpadding"
+            android:text="@string/canceltext"
+            android:textColor="@color/white"
+            android:textSize="@dimen/loginr_text_size"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/checkrate"
+            style="?android:attr/borderlessButtonStyle"
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/savebuttonpadding"
+            android:background="@drawable/savebtn_style"
+            android:text="@string/chcksch"
+            android:textColor="@color/white"
+            android:textSize="@dimen/loginr_text_size"
+            android:textStyle="bold" />
+
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="false"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="@dimen/savebuttonpadding"
+            android:background="@drawable/savebtn_style"
+            android:gravity="center_horizontal|center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/loginr_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

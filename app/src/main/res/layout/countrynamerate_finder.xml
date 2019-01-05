@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/header_view"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_maker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/countrynamerecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/Empty_Screen"
+            layout="@layout/empty_screen"
+            android:visibility="gone"
+
+            />
+        <View
+            android:id="@+id/view_maker"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="8dp"
+            android:background="@color/view" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Model Not Found"
+            android:textColor="@color/Darkblueone"
+            android:textSize="@dimen/empty_msg" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:progressDrawable="@drawable/progress_style" />
+    </RelativeLayout>
+
+
+</LinearLayout>

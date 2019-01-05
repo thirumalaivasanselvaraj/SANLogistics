@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Logistics</string>
+
+    <string name="name">Name</string>
+    <string name="mobile">Mobile No</string>
+    <string name="sourse">source Address</string>
+    <string name="destinations">Destinations</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="confirm">Confirm</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Logistics</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="spinner_title">Select Category</string>
+
+    <string name="acceptaccount">Your account is accepted?</string>
+    <string name="logoutmsg">Are you sure  want to Logout?</string>
+    <string name="customer">Do you want to Add Customer?</string>
+    <string name="deletemsgfirst">Are you sure you want to delete your account? </string>
+    <string name="deletemsglast">your account? </string>
+    <string name="deletetitle">Delete account</string>
+    <string name="logout">Log out</string>
+    <string name="Addcustomer">Add</string>
+    <string name="mobile_number">Mobile number</string>
+
+    <!--password fragment-->
+    <string name="oldpass">Old password</string>
+    <string name="newpass">New password</string>
+    <string name="Rnewpass">Repeat New password</string>
+    <string name="canceltext">CANCEL</string>
+    <string name="senddatatomail">SEND MAIL</string>
+
+    <string name="save">save</string>
+    <string name="chckrate">CheckRate</string>
+    <string name="chcksch"> Find Schedule</string>
+    <!--Notifications  fragment-->
+    <string name="nonotifications">No notifications at this moment,</string>
+    <string name="plschklatr">please check back later</string>
+    <string name="notificationordertitle">Your order</string>
+
+    <!--Settings  fragment-->
+    <string name="settingaccount">ACCOUNT</string>
+    <string name="settingname">Thirumalai</string>
+    <string name="setttingemail">thirumalai@gmail.com</string>
+    <string name="settingpassword">Change password</string>
+    <string name="settingleuf">Logistics</string>
+    <string name="settingabout">About Logistics</string>
+    <string name="settingterm">Terms of Use</string>
+    <string name="settingprivacy">Privacy Policy</string>
+
+    <string name="settingshare">Share with my friends</string>
+    <string name="settingdelete">Delete account</string>
+    <string name="settingversion">Version</string>
+    <string name="settingappadia">2018 San Media Inc</string>
+    <string name="settingversionno">1.0.0</string>
+
+    <string name="settingsupport">Support</string>
+    <string name="getfreightquo">Get Quote</string>
+
+    <!--Setting HiNt-->
+    <string name="settingcontactpersonname">Contact Person Name</string>
+    <string name="settingemail">Email</string>
+    <string name="settingmobile">Mobile Number</string>
+    <string name="settingAddress">Address</string>
+    <string name="settingUpdate">Update</string>
+    <string name="dateofbirth">DOB</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <!--ADD Customer Details-->
+    <string name="addcustomerdetails">Add New Company</string>
+    <string name="addcustomernameofthecompany">Name of the company</string>
+    <string name="addcustomeraddressofthecompany"> Address Of the Company</string>
+
+    <string name="addcustomecontactpersonname">Contact Person Name</string>
+    <string name="addcustomerdesignation">Designation</string>
+    <string name="addcustomermobilenumber">Mobile Number</string>
+    <string name="addcustomeremailid">Email Id</string>
+    <string name="addcustomercategory">Category</string>
+    <string name="addcustomercustomertype"> Customer Type</string>
+    <string name="savecustomer">Save Customer</string>
+    <string name="nointernetcnnection">Internet Connection Is Required</string>
+    <string-array name="NextFollowup">
+        <item>visit</item>
+        <item>call</item>
+        <item>email</item>
+
+    </string-array>
+    <string-array name="Enquiry">
+        <item>Yes</item>
+        <item>No</item>
+
+    </string-array>
+
+    <string-array name="CustomerTypeArray">
+        <item>Key account</item>
+        <item>Transactional</item>
+        <item>Contractual</item>
+
+    </string-array>
+    <string-array name="DescriptionArray">
+        <item>Cold</item>
+        <item>Warm</item>
+        <item>Hot</item>
+
+    </string-array>
+    <string-array name="ModeofcallArray">
+        <item>Telphone</item>
+        <item>Email</item>
+        <item>Visit</item>
+
+    </string-array>
+    <string-array name="TypeofcallArray">
+        <item>NewProspect</item>
+        <item>FollowUpCall</item>
+
+
+    </string-array>
+</resources>

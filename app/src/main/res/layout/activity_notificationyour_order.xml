@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_bg_color"
+
+    android:orientation="vertical">
+
+
+    <include layout="@layout/custom_toolbar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.9dp"
+        android:background="@color/login_text_hint_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fb_bg_color"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:fontFamily="sans-serif-light"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/loginr_text_size" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_view_style"
+                android:elevation="@dimen/new_elivation"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_paddingtxt"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="13.11 Gallons"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Tax"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Total"
+                        android:textColor="@color/block"
+
+                        android:textSize="@dimen/loginr_text_size"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="$41.41"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="$0.00"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="$41.41"
+                        android:textColor="@color/block"
+                        android:textSize="@dimen/loginr_text_size"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/fb_bg_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="@dimen/common_paddingtxt"
+                android:text="ORDER"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/loginr_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_view_style"
+                android:elevation="@dimen/new_elivation"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_paddingtxt"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Order No."
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Fuel"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Date"
+
+                        android:textColor="@color/leuf_blue"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Charged"
+
+                        android:textColor="@color/leuf_blue"
+                        android:textSize="@dimen/loginr_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="L1234562"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Regular($2.08/G)"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="09/04/2016"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="7024"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/fb_bg_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:fontFamily="sans-serif-light"
+                android:padding="@dimen/common_paddingtxt"
+                android:text="DELIVERY"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/loginr_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_view_style"
+                android:elevation="@dimen/new_elivation"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Date"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Time"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Driver"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="@dimen/summarupadding"
+                        android:text="License"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="09/04/2016"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="04.43PM"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="Laura Coley"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+
+                        android:maxLines="1"
+                        android:padding="@dimen/summarupadding"
+                        android:text="5649023kj002"
+                        android:textColor="@color/toolbar_text_color"
+                        android:textSize="@dimen/loginr_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+
+                android:fontFamily="sans-serif-light"
+                android:padding="@dimen/common_paddingtxt"
+                android:text="Logistics"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/loginr_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_view_style"
+                android:elevation="@dimen/new_elivation"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/fb_bg_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="sans-serif-light"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/loginr_text_size" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

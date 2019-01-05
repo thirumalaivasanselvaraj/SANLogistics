@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/tool_Rel"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:id="@+id/collapsing_toolbar_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/colorPrimary"
+
+                            app:popupTheme="@style/AppTheme.AppBarOverlay">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/padding_left_right"
+                                android:gravity="center"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:id="@+id/toolbar_title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1.9"
+                                    android:text="Toolbar Title"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp"
+                                    android:textStyle="italic" />
+
+
+                                <ImageView
+                                    android:id="@+id/logoutmain"
+                                    android:layout_width="45dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:src="@drawable/logout_icons"
+                                    android:visibility="visible"
+
+                                    />
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.Toolbar>
+                    </android.support.design.widget.CollapsingToolbarLayout>
+
+                </android.support.design.widget.AppBarLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/homepage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appcolor"
+            android:visibility="gone"
+
+            ></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/changepassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appcolor"
+            android:visibility="gone"
+
+            ></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/postorderpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appcolor"
+            android:visibility="gone"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appcolor"
+            android:visibility="gone"></FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/Myaccount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appcolor"
+            android:visibility="gone"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appcolor"
+            android:visibility="gone"></FrameLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="@drawable/drawar_item_select"
+        app:itemTextColor="@drawable/drawar_item_select"
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

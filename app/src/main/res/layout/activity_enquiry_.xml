@@ -1,0 +1,1449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_tool"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/enquiry_activity_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/ic_blue_backicon" />
+
+        <TextView
+            android:id="@+id/car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Enquiry Details"
+            android:textColor="@color/block"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_one"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/view"></View>
+
+    <ScrollView
+
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_weight="1"
+        android:background="@drawable/appbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:paddingLeft="17dp"
+                android:text="SHIPPER"
+                android:textColor="@color/block"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <EditText
+                    android:id="@+id/shippercompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/user_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Company"
+                    android:maxLines="1"
+                    android:drawableRight="@drawable/select_icon"
+
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/shipperaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/address_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Address"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputcontactperson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/shipperemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Email"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/red"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/ProfileprogressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:progressDrawable="@drawable/circle_progress_bar"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputdesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/shippermobile"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/mobile_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:paddingLeft="17dp"
+                android:text="CONSIGNEE"
+                android:textColor="@color/block"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/consigcompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/user_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Company"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/consigaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/address_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Address"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/consigemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Email"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+
+                    android:textColor="@color/black"
+
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/consigcontactnumber"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/mobile_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Mobile"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="23dp"
+                android:text="Select FLL Product:"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <Spinner
+                    android:id="@+id/spinnerselectfll"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+
+                    android:prompt="@string/spinner_title" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="7dp"
+
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/selefllproductlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/FCLtoggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="FCL"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        app:showText="false" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/LCLtoggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="LCL"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        app:showText="false" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lcllinearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="17dp"
+
+                        android:text="Submit Packaging Type:" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <Spinner
+                            android:id="@+id/spinnersubmitpackagingtype"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:prompt="@string/spinner_title" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="7dp"
+
+                        android:background="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/selectairfrightlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="gone">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/airfreightnoofpackage"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/noof_package_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Number of Packages"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/airfreighttotalgrossweight"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/weight_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Total Gross Weight"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/airfreightchargeableweight"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/weight_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Chargeable Weight"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/fcllinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+
+                    android:text="Select Container Type:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <Spinner
+                        android:id="@+id/spinnercontainertype"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:prompt="@string/spinner_title" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="7dp"
+
+                    android:background="@color/black" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/submitshipmentsize"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/shipment_size_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Shibment Size"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/landfreightlinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+
+                    android:text="Truck Load:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <Spinner
+                        android:id="@+id/truckloadspinner"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:prompt="@string/spinner_title" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="7dp"
+
+                    android:background="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/landfreightnooftruckloadlinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/landfreightnooftruckload"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                            android:drawableLeft="@drawable/shipment_size_icon"
+                            android:drawablePadding="7dp"
+                            android:hint="Shibment Size"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+
+                            android:textColorHighlight="@color/white"
+                            android:textColorHint="@color/black"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/LTLlandfreightlinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/LTLlandfreightnoofpackage"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                            android:drawableLeft="@drawable/noof_package_icon"
+                            android:drawablePadding="7dp"
+                            android:hint="No Of Packages"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+
+                            android:textColorHighlight="@color/white"
+                            android:textColorHint="@color/black"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/LTLlandfreightgrossweight"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                            android:drawableLeft="@drawable/weight_icon"
+                            android:drawablePadding="7dp"
+                            android:hint="Grossweight"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+
+                            android:textColorHighlight="@color/white"
+                            android:textColorHint="@color/black"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/LTLlandfreightchargeableweight"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                            android:drawableLeft="@drawable/weight_icon"
+                            android:drawablePadding="7dp"
+                            android:hint="Chargeable weight"
+                            android:maxLines="1"
+                            android:padding="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+
+                            android:textColorHighlight="@color/white"
+                            android:textColorHint="@color/black"
+                            android:textSize="13sp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/numberoftruckloadlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/nooftruckload"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/shipment_size_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="No Of truck Load"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/commonsubmitall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="gone">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/submitnoofpackage"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/noof_package_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Submit NO of Packages"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/submittotalgrossweight"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/weight_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Submit Total GRoss Weight"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/submittotalvolume"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/noof_package_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Submit Total Volume"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/submitchargableweight"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/weight_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Submit Chargeable weight CBM"
+
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="17dp"
+
+                android:text="Select FLL Service:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <Spinner
+                    android:id="@+id/spinnerfllservice"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:prompt="@string/spinner_title" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="7dp"
+
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/LocationsSaferight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+                    android:text="Select Locations:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+                    android:text="Origin:"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <EditText
+                        android:id="@+id/origioncountryname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/select_icon"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Select Name Of the Country"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+
+                    android:text="Select Port:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerport"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/originplaceofreceipt"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/placeof_receipent_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Place Of Receipt"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/originpickupaddress"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/address_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Pickup Address"
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+                    android:text="Destination:"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+
+                    android:text="Select Country:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <EditText
+                        android:id="@+id/desticountryname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableRight="@drawable/select_icon"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="Select Name Of the Country"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+
+                    android:text="Select Port:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <Spinner
+                        android:id="@+id/destispinnerport"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:prompt="@string/spinner_title" />
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/destiplaceofreceipt"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/placeof_receipent_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Place Of Receipt"
+
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/destipickupaddress"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/address_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Pickup Address"
+
+                        android:maxLines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+
+                    android:text="Select Incoterms:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerincoterms"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:prompt="@string/spinner_title" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="7dp"
+
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="5dp"
+                    android:paddingLeft="17dp"
+
+                    android:text="Select Commodity:" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <Spinner
+                        android:id="@+id/spinnercommodity"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:prompt="@string/spinner_title" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="7dp"
+
+                    android:background="@color/black" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/commodityvalue"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                        android:drawableLeft="@drawable/address_icon"
+                        android:drawablePadding="7dp"
+                        android:hint="Commodity Value"
+                        android:maxLines="1"
+                        android:padding="15dp"
+
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/black"
+                        android:textSize="13sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="17dp"
+
+                android:text="Additional Infomation(Optional):" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/freightpayable"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/freight_payable_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Freight Payable At"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/shipmentreference"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/shipment_refrence_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Shipment Reference"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="17dp"
+
+                android:text="Shipment Date:" />
+
+            <EditText
+                android:id="@+id/Shipmentdate"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/date_icon"
+                android:drawablePadding="7dp"
+                android:focusable="false"
+                android:hint="Shipment  Date"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/paymenttermss"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789,!@#$%^*(>)"
+                    android:drawableLeft="@drawable/payment_term_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Payment Terms"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="17dp"
+
+                android:text="Priority:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <Spinner
+                    android:id="@+id/spinnerpriority"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+
+                    android:prompt="@string/spinner_title" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="7dp"
+
+                android:background="@color/black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/targetrate"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:drawableLeft="@drawable/target_rete_icon"
+                    android:drawablePadding="7dp"
+                    android:hint="Target Rate"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="17dp"
+
+                android:text="Quote By Date:" />
+
+            <EditText
+                android:id="@+id/quotebydate"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:drawableLeft="@drawable/date_icon"
+                android:drawablePadding="7dp"
+                android:focusable="false"
+                android:hint="Quote By Date"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp"
+
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+
+
+            android:id="@+id/senddatatomail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/saveandcancelmargin"
+            android:text="@string/senddatatomail"
+            android:textColor="@color/login_btn_color"
+            android:textSize="@dimen/loginr_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/enquirysavebutton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/saveandcancelmargin"
+            android:padding="1dp"
+            android:text="@string/getfreightquo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/loginr_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

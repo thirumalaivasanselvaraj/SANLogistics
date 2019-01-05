@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+<!--
+    <TextView
+        android:id="@+id/writereview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:padding="@dimen/common_paddingtxt"
+        android:text="Please ,rate the driver ,it is very useful for improving our services"
+        android:textColor="@color/redcolor" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notificationrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.5"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/veh_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_empty_notify"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/no_veh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/veh_img"
+        android:layout_marginTop="@dimen/common_margintop"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/nonotifications"
+
+        android:textColor="@color/leuf_blue"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <TextView
+
+        android:id="@+id/nosaved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_veh"
+        android:gravity="center"
+        android:text="@string/plschklatr"
+
+        android:textColor="@color/leuf_blue"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

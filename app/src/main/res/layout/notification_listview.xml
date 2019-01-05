@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fb_bg_color"
+    android:gravity="center"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fb_bg_color"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+
+
+        >
+
+        <TextView
+            android:id="@+id/notificationdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:gravity="left"
+            android:padding="16dp"
+            android:text="4thSEP 2016"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginr_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-10dp"
+            android:background="@color/white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/Notificationmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:text="L123254362"
+                android:textSize="@dimen/loginr_text_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_text_hint_color" />
+
+            <ImageView
+                android:id="@+id/notificationback"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="-30dp"
+                android:src="@mipmap/rightarrow" />
+
+
+            <TextView
+                android:id="@+id/checkyourbill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="$41.41-13.11 gallons"
+                android:textSize="@dimen/loginr_text_size" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_text_hint_color" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_text_hint_color" />
+    </LinearLayout>
+</RelativeLayout>

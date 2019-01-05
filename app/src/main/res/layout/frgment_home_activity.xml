@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/customerprofilebutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/enquiry_button_style"
+        android:drawableLeft="@mipmap/customericon"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="Customer Profile"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/enquirybutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/home_button_style"
+        android:drawableLeft="@mipmap/customericon"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="Enquiry"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/RateFinder"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rate_finder_backroind_button"
+        android:drawableLeft="@drawable/schfn"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="Schedule  Finder"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04518C</color>
+    <color name="colorPrimaryDark">#04518C</color>
+    <color name="colorAccent">#000000</color>
+    <color name="greencolor">#27AE62</color>
+
+
+
+
+    <color name="appcolor">#44BEFD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="blue">#00BCD4</color>
+    <color name="Darkblueone">#2C3E50</color>
+    <color name="Darkbluetwo">#034170</color>
+    <color name="l">#84665E</color>
+    <color name="orange">#FF8833</color>
+    <color name="yogabackcolor">#3D3D3D</color>
+    <color name="backroundcolor">#686761</color>
+    <color name="block">#000000</color>
+    <color name="redcolor">#EE4F4F</color>
+    <color name="yellow">#A3620A</color>
+    <color name="lightgreen">#8ABA56</color>
+    <color name="darkgreen">#45671E</color>
+
+    <color name="red">#E74C3C</color>
+    <color name="grey">#B3B3B3</color>
+    <color name="light_gray">#ECF0F1</color>
+    <color name="White">#FFFFFF</color>
+    <color name="selected_text">#ecf0f1</color>
+    <color name="auto">#277762</color>
+    <color name="manual">#255194</color>
+    <color name="estop">#800000</color>
+    <color name="service">#0000FF</color>
+    <color name="whitecolor">#FFFFFF</color>
+
+    <color name="signupColor">#04327D</color>
+    <color name="ash_color">#808080</color>
+
+    <color name="splash">#4EAEE5</color>
+    <color name="toolbar_text_color">#2C3E50</color>
+    <color name="toolbar_bg_color">#ECF0F1</color>
+    <color name="login_text_hint_color">#B3B3B3</color>
+    <color name="login_text_color">#034170</color>
+    <color name="login_btn_color">#E74C3C</color>
+    <color name="spinnerbackround">#CDD2D4</color>
+    <color name="connect_using">#04518C</color>
+    <color name="fb_strike_color">#04518C</color>
+    <color name="fb_font">#04518C</color>
+    <color name="fb_bg_color">#ECF0F1</color>
+    <color name="forgeot_pass_color">#E74C3C</color>
+    <color name="leuf_blue">#04518C</color>
+
+    <color name="gradientstart">#ECF0F1</color>
+    <color name="gradientend">#FFFFFF</color>
+    <color name="fueldeliveredgreen">#54BF63</color>
+
+    <color name="text_color"> #04518C</color>
+    <color name="add_vehicle">#E74C3C</color>
+
+    <color name="view">#A29F9F</color>
+    <color name="edittextbackround">#5A7E98</color>
+
+    <color name="lightgray">#808B7A</color>
+</resources>
