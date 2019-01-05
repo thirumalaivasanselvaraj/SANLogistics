@@ -389,7 +389,7 @@ public class MainActivity extends AppCompatActivity
             System.out.println("ProfileImage" + CustomerMeList.get(0).getFilePath());
             profileiconnn = CustomerMeList.get(0).getFilePath();
             if (profileiconnn != null && !profileiconnn.isEmpty()) {
-                System.out.println("profile_icon" + profileiconnn);
+                System.out.println("profile_iconss" + profileiconnn);
 
                 Picasso
                         .with(MainActivity.this)
